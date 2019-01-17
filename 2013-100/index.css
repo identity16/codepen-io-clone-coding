@@ -1,0 +1,167 @@
+/* Wrapper */
+.box {
+    width: 10em;
+    height: 10em;
+    line-height: 10em;
+    text-align: center;
+    margin: 50px auto;
+    overflow: hidden;
+
+    position: relative;
+}
+
+/* All Boxes */
+.box__dir, .box__center {
+    width: 100%;
+    height: 100%;
+
+    transition: transform .4s ease;
+}
+
+/* 4-direction Boxes */
+.box__dir {
+    position: absolute;
+}
+
+.box__dir:hover {
+    z-index: 1;
+}
+
+/* Hover Detecting Area */
+.box__dir::before {
+    width: 70.71%;
+    height: 70.71%;
+    
+    position:absolute;
+    content:'';
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+
+.box__dir:hover::before {
+    width: 100%;
+    height: 100%;
+    transform:none;
+    
+    z-index:1;
+}
+
+/* Left Box */
+.box__left {
+    left: -100%;
+    background-color: #f5deb3;
+}
+
+.box__left::before {
+    top: 0;
+    left: 100%;
+    /* background-color: #f5deb3aa; */
+}
+
+.box__left:hover, .box__left:hover ~ .box__center {
+    transform: translateX(100%);
+}
+
+.box__left:hover::before {
+    top: 0;
+    left: 100%;
+}
+
+/* Right Box */
+.box__right {
+    left: 100%;
+    background-color: #5f9ea0;
+}
+
+.box__right::before {
+    top: 0;
+    left: 0;
+    /* background-color: #5f9ea0aa; */
+}
+
+.box__right:hover, .box__right:hover ~ .box__center {
+    transform: translateX(-100%);
+}
+
+.box__right:hover::before {
+    top: 0;
+    left: -100%;
+}
+
+/* Top Box */
+.box__top {
+    top: -100%;
+    background-color: #fd8b8b;
+}
+
+.box__top::before {
+    top: 50%;
+    left: 50%;
+    /* background-color: #fd8b8baa; */
+}
+
+.box__top:hover, .box__top:hover ~ .box__center {
+    transform: translateY(100%);
+}
+
+.box__top:hover::before {
+    top: 100%;
+    left: 0;
+}
+
+/* Bottom Box */
+.box__bottom {
+    top: 100%;
+    background-color: #6b8e23;
+}
+
+.box__bottom::before {
+    top: -50%;
+    left: 50%;
+    /* background-color: #6b8e23aa; */
+}
+
+.box__bottom:hover, .box__bottom:hover ~ div {
+    transform: translateY(-100%);
+}
+
+.box__bottom:hover::before {
+    top: -100%;
+    left: 0;
+}
+
+/* Center Box */
+.box__center {
+    background-color: orangered;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Some boring css(From Original Source Code) */
+html,
+body{
+  height:100%;
+}
+
+body{ 
+  font-family:Helvetica, sans-serif;
+  transform:translateZ(0);
+}
+
+h1{
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  font-size:8pt;
+  color:gray;
+}
+
+a{
+  color:#FF6600;  
+}
+
+a:hover{
+  color:darkorange;
+}
