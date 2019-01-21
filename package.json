@@ -1,0 +1,19 @@
+{
+  "name": "codepen-io-clone-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/identity16/codepen-io-clone-coding.git"
+  },
+  "author": "identity16 <identity930@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/identity16/codepen-io-clone-coding/issues"
+  },
+  "homepage": "https://github.com/identity16/codepen-io-clone-coding#readme"
+}
