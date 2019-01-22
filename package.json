@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/identity16/codepen-io-clone-coding/issues"
   },
-  "homepage": "https://github.com/identity16/codepen-io-clone-coding#readme"
+  "homepage": "https://github.com/identity16/codepen-io-clone-coding#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-util": "^3.0.8"
+  }
 }
